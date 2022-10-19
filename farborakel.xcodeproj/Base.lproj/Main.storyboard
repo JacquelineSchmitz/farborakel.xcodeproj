@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-y3-5lx">
-                                <rect key="frame" x="51" y="128" width="290" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-y3-5lx">
+                                <rect key="frame" x="20" y="128" width="350" height="35"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ändere die Farbe des Hintergrunds">
@@ -28,9 +27,8 @@
                                     <action selector="changeBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXq-rL-MCp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-9h-08g">
-                                <rect key="frame" x="73" y="647" width="246" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-9h-08g">
+                                <rect key="frame" x="20" y="647" width="350" height="35"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ändere die Farbe des Kreises">
@@ -40,14 +38,25 @@
                                     <action selector="changeCirclecolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bl-Oh-Red"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwv-bl-uMd">
-                                <rect key="frame" x="95" y="322" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwv-bl-uMd">
+                                <rect key="frame" x="100" y="322" width="190" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="lUB-9h-08g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1aZ-jd-2mJ"/>
+                            <constraint firstItem="lUB-9h-08g" firstAttribute="top" secondItem="nwv-bl-uMd" secondAttribute="bottom" constant="125" id="EVp-nk-H3Q"/>
+                            <constraint firstItem="yR3-y3-5lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="QLc-Q4-VD6"/>
+                            <constraint firstItem="nwv-bl-uMd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Thh-jg-8vh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nwv-bl-uMd" secondAttribute="trailing" constant="100" id="VQJ-ts-bs5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lUB-9h-08g" secondAttribute="trailing" constant="20" id="YJm-gs-RAv"/>
+                            <constraint firstItem="yR3-y3-5lx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hpS-g8-Vj6"/>
+                            <constraint firstItem="nwv-bl-uMd" firstAttribute="top" secondItem="yR3-y3-5lx" secondAttribute="bottom" constant="159" id="igA-OL-X9L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lUB-9h-08g" secondAttribute="bottom" constant="128" id="ioy-rV-fVy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yR3-y3-5lx" secondAttribute="trailing" constant="20" id="rIO-au-8IW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonBackground" destination="yR3-y3-5lx" id="adY-A2-s6d"/>
